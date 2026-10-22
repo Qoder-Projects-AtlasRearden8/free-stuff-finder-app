@@ -62,13 +62,13 @@ The current categories are:
 | `printables` | Printables & templates |
 | `assistance` | Programs & assistance |
 
-Use existing tags when they fit. Tags are case-sensitive in the data file, so match existing spellings such as `Small business`, `Beginners`, or `United States`. You can introduce a new tag when it genuinely helps someone filter the shelf.
+Use existing tags when they fit. Tags are case-sensitive in the data file, so match existing spellings such as `Small business`, `Beginners`, `Local AI`, `AI coding`, `Agents`, `Reselling`, `Healthcare`, `Chess`, or `FFXIV`. The validator rejects inconsistent capitalization across listings. You can introduce a new tag when it genuinely helps someone filter the shelf.
 
 ## Review checklist
 
 Before submitting, confirm that:
 
-- The link is the official source and opens without an affiliate redirect.
+- The link is the official source, uses HTTPS, and opens without an affiliate redirect or tracking parameters.
 - Free access does not require a credit card unless that is clearly stated in the limits and caveat.
 - Region restrictions and age or eligibility rules are mentioned.
 - The verification date is accurate and not in the future.

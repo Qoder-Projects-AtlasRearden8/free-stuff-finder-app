@@ -46,6 +46,7 @@ test("HTML ids are unique and required app hooks are present", () => {
 
 test("the page includes accessible landmarks and a JavaScript fallback", () => {
   assert.match(html, /<a class="skip-link" href="#browse">/);
+  assert.match(html, /id="browse" tabindex="-1"/);
   assert.match(html, /<main>/);
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /<noscript>/);

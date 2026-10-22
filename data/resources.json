@@ -19,7 +19,7 @@
     {
       "id": "software",
       "label": "Software & tools",
-      "blurb": "Everyday apps for creating, selling, and keeping the books."
+      "blurb": "Everyday apps for creating, selling, organizing—and a little fun."
     },
     {
       "id": "printables",
@@ -117,6 +117,23 @@
       "region": "Global",
       "lastVerified": "2026-10-21",
       "caveat": "Free and paid API tiers can have different data-use terms. Read them before sending private material through an app you build."
+    },
+    {
+      "id": "github-copilot-free",
+      "name": "GitHub Copilot Free",
+      "provider": "GitHub",
+      "category": "ai-tools",
+      "description": "AI coding help inside common editors, from explaining an unfamiliar file to drafting a small function. The free plan is a practical way for beginners to try assisted coding without committing to a paid seat.",
+      "freeTierLimits": "Free for individual GitHub accounts with 2,000 code completions per month and a limited monthly allowance of AI credits for chat and agent features. Paid plans add more usage and model choices.",
+      "tags": [
+        "AI coding",
+        "Coding",
+        "Beginners"
+      ],
+      "url": "https://github.com/features/copilot",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Generated code can be wrong, insecure, or a poor fit for your project. Review every change, keep secrets out of prompts, and check your editor's data-sharing settings."
     },
     {
       "id": "hugging-face",
@@ -255,6 +272,40 @@
       "caveat": "Course availability and credit options can differ by country. You do not need a certificate to benefit from the lessons."
     },
     {
+      "id": "prompt-engineering-guide",
+      "name": "Prompt Engineering Guide",
+      "provider": "DAIR.AI",
+      "category": "courses",
+      "description": "A plain-language, regularly updated guide to prompting, retrieval, agents, and responsible AI use. Short technique pages and examples make it easy to improve one prompt at a time.",
+      "freeTierLimits": "The core guide and many linked resources are free to read, and the project is open source. Some separately offered courses, books, or certificates may cost money.",
+      "tags": [
+        "AI basics",
+        "Writing",
+        "Open source"
+      ],
+      "url": "https://www.promptingguide.ai/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Examples can lag behind the newest models, and no prompt pattern is guaranteed. Test important outputs, check sources, and avoid sharing private material while experimenting."
+    },
+    {
+      "id": "mcp-for-beginners",
+      "name": "MCP for Beginners",
+      "provider": "Microsoft",
+      "category": "courses",
+      "description": "A free, open-source curriculum for understanding the Model Context Protocol, the open standard used to connect AI assistants with tools and data. Lessons build from the basics into working code and security considerations.",
+      "freeTierLimits": "All lessons, code samples, and diagrams are free under the MIT license. You can read on GitHub without paying; the coding exercises are designed for people comfortable with a development environment.",
+      "tags": [
+        "AI basics",
+        "Agents",
+        "Open source"
+      ],
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "This is developer-oriented and the MCP ecosystem moves quickly. Check the current protocol docs and threat model before connecting a server to real files, accounts, or customer data."
+    },
+    {
       "id": "cs50x",
       "name": "CS50x",
       "provider": "Harvard University",
@@ -321,6 +372,23 @@
       "region": "Global",
       "lastVerified": "2026-10-21",
       "caveat": "Some lessons naturally point toward HubSpot's products. You can learn the concepts without buying the software."
+    },
+    {
+      "id": "ebay-seller-center",
+      "name": "eBay Seller Center",
+      "provider": "eBay",
+      "category": "courses",
+      "description": "Free seller education and a practical toolkit for reselling on eBay. Learn how listings, shipping, pricing, live selling, and Seller Hub fit together before you source a pile of inventory.",
+      "freeTierLimits": "Seller Center guides and Seller Hub tools are free to use, but you need an eBay seller account and identity or bank verification to list. Selling fees, promoted listings, and Store subscriptions are separate costs.",
+      "tags": [
+        "Reselling",
+        "Small business",
+        "Beginners"
+      ],
+      "url": "https://www.ebay.com/sellercenter",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "eBay's own guidance naturally promotes selling on eBay. Fees, category rules, and seller protections vary by marketplace and can change, so check the numbers before buying stock."
     },
     {
       "id": "amazon-seller-university",
@@ -406,6 +474,23 @@
       "region": "Global",
       "lastVerified": "2026-10-22",
       "caveat": "A digital credential is not a guarantee of a job or an industry certification. Confirm that the course is available through your regional SkillsBuild site."
+    },
+    {
+      "id": "open-rn",
+      "name": "Open RN",
+      "provider": "WisTech Open / Open RN",
+      "category": "courses",
+      "description": "Free open educational resources for nursing students and working nurses, including textbooks, simulations, and learning activities. Built for education and refresher learning rather than product promotion.",
+      "freeTierLimits": "Open textbooks and simulations are free to access as open educational resources; no course purchase is required. Individual titles may have different licenses or optional print and download costs.",
+      "tags": [
+        "Healthcare",
+        "Nursing",
+        "Open education"
+      ],
+      "url": "https://www.wistechopen.org/open-rn-details",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Education only: these materials do not replace your program's curriculum, clinical policies, or professional judgement. Confirm current practice with your employer and licensing board."
     },
     {
       "id": "canva-free",
@@ -515,7 +600,7 @@
       "provider": "Amazon",
       "category": "software",
       "description": "Amazon's self-publishing path for eBooks and print-on-demand paperbacks. Upload a manuscript and cover, set your price, and reach Amazon's store without an agent.",
-      "freeTierLimits": "There is no upfront fee to publish. Amazon keeps a share of each sale, and optional printed proofs, expanded distribution, or advertising cost money.",
+      "freeTierLimits": "There is no upfront fee to publish. Amazon keeps a share of each sale; optional printed proofs, advertising, and expanded distribution choices can add costs or affect royalties.",
       "tags": [
         "Publishing",
         "Authors",
@@ -644,6 +729,40 @@
       "region": "Global",
       "lastVerified": "2026-10-22",
       "caveat": "Archive formats can preserve sensitive files. Encrypt anything private before sending it and verify the source of unexpected archives before opening them."
+    },
+    {
+      "id": "lichess",
+      "name": "Lichess",
+      "provider": "Lichess open-source community",
+      "category": "software",
+      "description": "A genuinely free chess site with no ads or paid tier. Play real-time or correspondence games, solve unlimited puzzles, review finished games, and dig into studies and computer analysis.",
+      "freeTierLimits": "All core play, puzzles, analysis, and study tools are free, with no paid subscription. The project is open source and relies on optional donations; donations do not unlock extra features.",
+      "tags": [
+        "Chess",
+        "Gaming",
+        "Open source"
+      ],
+      "url": "https://lichess.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Online games follow fair-play rules, including limits on engine assistance. You need an account for some features, and local engine analysis requires a browser or app that can handle it."
+    },
+    {
+      "id": "ffxiv-teamcraft",
+      "name": "FFXIV Teamcraft",
+      "provider": "FFXIV Teamcraft community",
+      "category": "software",
+      "description": "A community-built planning workshop for Final Fantasy XIV crafting and gathering. Build ingredient shopping lists, plan recipes, and share projects without keeping a dozen spreadsheets open.",
+      "freeTierLimits": "The web app is free and open source, with optional Patreon support. Some collaborative or sync features may require signing in, and the game itself needs a valid Square Enix account.",
+      "tags": [
+        "FFXIV",
+        "Gaming",
+        "Planning"
+      ],
+      "url": "https://ffxivteamcraft.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "This is an unofficial fan tool, not a Square Enix product. Game expansions and subscriptions are sold separately, and recipe or item data can lag behind a new patch."
     },
     {
       "id": "microsoft-create",

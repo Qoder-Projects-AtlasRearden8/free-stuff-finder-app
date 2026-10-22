@@ -27,6 +27,7 @@ function searchableText(resource) {
       resource.category,
       resource.description,
       resource.freeTierLimits,
+      resource.caveat,
       resource.region,
       ...(Array.isArray(resource.tags) ? resource.tags : []),
     ].join(" "),

@@ -25,6 +25,14 @@ const REQUIRED_TEXT_FIELDS = [
 ];
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+const TRACKING_PARAMS = new Set([
+  "aff",
+  "affiliate",
+  "fbclid",
+  "gclid",
+  "ref",
+  "referral",
+]);
 
 function isPlainObject(value) {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -120,6 +128,7 @@ export function validateDataset(data, { today = todayIso() } = {}) {
 
   const resourceIds = new Set();
   const resourceUrls = new Set();
+  const canonicalTags = new Map();
 
   data.resources.forEach((resource, index) => {
     const label = `resources[${index}]${resource?.id ? ` (${resource.id})` : ""}`;
@@ -192,11 +201,23 @@ export function validateDataset(data, { today = todayIso() } = {}) {
         if (tag.trim().length > 32) {
           errors.push(`${label}.tags[${tagIndex}] is too long.`);
         }
+        if (tag !== tag.trim()) {
+          errors.push(`${label}.tags[${tagIndex}] must not have leading or trailing spaces.`);
+        }
         const normalized = tag.trim().toLocaleLowerCase();
         if (seenTags.has(normalized)) {
           errors.push(`${label}.tags contains "${tag}" more than once.`);
         }
         seenTags.add(normalized);
+
+        const canonicalTag = canonicalTags.get(normalized);
+        if (canonicalTag && canonicalTag !== tag) {
+          errors.push(
+            `${label}.tags[${tagIndex}] "${tag}" should match the existing spelling "${canonicalTag}".`,
+          );
+        } else if (!canonicalTag) {
+          canonicalTags.set(normalized, tag);
+        }
       });
     }
 
@@ -211,6 +232,16 @@ export function validateDataset(data, { today = todayIso() } = {}) {
         }
         if (url.username || url.password) {
           errors.push(`${label}.url must not include credentials.`);
+        }
+        for (const parameter of url.searchParams.keys()) {
+          if (
+            parameter.toLowerCase().startsWith("utm_") ||
+            TRACKING_PARAMS.has(parameter.toLowerCase())
+          ) {
+            errors.push(
+              `${label}.url must not include affiliate or tracking parameter "${parameter}".`,
+            );
+          }
         }
         const normalizedUrl = url.href;
         if (resourceUrls.has(normalizedUrl)) {

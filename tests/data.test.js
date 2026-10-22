@@ -71,3 +71,40 @@ test("future verification dates and missing required categories are rejected", (
   assert.ok(errors.some((error) => error.includes("cannot be in the future")));
   assert.ok(errors.some((error) => error.includes("printables")));
 });
+
+test("the catalog covers the creator, small-business, care, and fun priorities", () => {
+  const tags = new Set(data.resources.flatMap(({ tags: resourceTags }) => resourceTags));
+  for (const tag of [
+    "AI coding",
+    "Agents",
+    "Healthcare",
+    "Nursing",
+    "Reselling",
+    "Chess",
+    "FFXIV",
+  ]) {
+    assert.ok(tags.has(tag), `Expected a "${tag}" resource.`);
+  }
+
+  const ids = new Set(data.resources.map(({ id }) => id));
+  for (const id of [
+    "github-copilot-free",
+    "mcp-for-beginners",
+    "open-rn",
+    "ebay-seller-center",
+    "lichess",
+    "ffxiv-teamcraft",
+  ]) {
+    assert.ok(ids.has(id), `Expected the "${id}" listing to exist.`);
+  }
+});
+
+test("inconsistent tag casing and tracked links are rejected", () => {
+  const invalid = structuredClone(data);
+  invalid.resources[1].tags[0] = invalid.resources[0].tags[0].toLowerCase();
+  invalid.resources[2].url = "https://example.org/?utm_source=newsletter&ref=homepage";
+
+  const errors = validateDataset(invalid, { today: validationDate });
+  assert.ok(errors.some((error) => error.includes("existing spelling")));
+  assert.ok(errors.some((error) => error.includes("affiliate or tracking")));
+});

@@ -49,6 +49,7 @@ const resources = [
     tags: ["Printables", "Bookkeeping", "Planning"],
     region: "Global",
     lastVerified: "2026-10-10",
+    caveat: "Requires a printer and fresh ink.",
   },
 ];
 
@@ -64,6 +65,7 @@ test("search requires every term and checks names, tags, and descriptions", () =
   assert.equal(matchesQuery(resources[1], "cafe ledger"), true);
   assert.equal(matchesQuery(resources[1], "ebookkeeping"), false);
   assert.equal(matchesQuery(resources[2], "#printables"), false);
+  assert.equal(matchesQuery(resources[2], "printer ink"), true);
   assert.equal(matchesQuery(resources[2], ""), true);
 });
 

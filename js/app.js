@@ -6,12 +6,16 @@ import {
   getTagCounts,
   toggleValue,
 } from "./filtering.js";
+import {
+  MAX_QUERY_LENGTH,
+  buildUrlQuery,
+  readUrlState,
+} from "./url-state.js";
 
 const DATA_URL = new URL("../data/resources.json", import.meta.url);
 const FAVORITES_KEY = "freebie-finder:favorites:v1";
 const TAG_LIMIT = 12;
 const AGING_DAYS = 180;
-const MAX_QUERY_LENGTH = 160;
 
 const ICONS = {
   external:
@@ -170,32 +174,16 @@ function persistFavorites() {
 }
 
 function readStateFromUrl() {
-  const params = new URLSearchParams(window.location.search);
-  state.query = (params.get("q") ?? "").slice(0, MAX_QUERY_LENGTH);
-  state.category = params.get("category") ?? ALL_CATEGORIES;
-  state.tags = new Set(
-    params
-      .getAll("tag")
-      .filter(Boolean)
-      .slice(0, 30),
-  );
-  state.sort = SORT_OPTIONS.includes(params.get("sort")) ? params.get("sort") : "curated";
-  state.view = params.get("view") === "saved" ? "saved" : "browse";
+  const urlState = readUrlState(window.location.search);
+  state.query = urlState.query;
+  state.category = urlState.category;
+  state.tags = new Set(urlState.tags);
+  state.sort = urlState.sort;
+  state.view = urlState.view;
 }
 
 function writeStateToUrl() {
-  const params = new URLSearchParams();
-  const query = state.query.trim();
-
-  if (query) params.set("q", query);
-  if (state.category !== ALL_CATEGORIES) params.set("category", state.category);
-  for (const tag of [...state.tags].sort((a, b) => a.localeCompare(b))) {
-    params.set("tag", tag);
-  }
-  if (state.sort !== "curated") params.set("sort", state.sort);
-  if (state.view === "saved") params.set("view", "saved");
-
-  const queryString = params.toString();
+  const queryString = buildUrlQuery(state);
   const nextUrl = `${window.location.pathname}${queryString ? `?${queryString}` : ""}${window.location.hash}`;
 
   try {
