@@ -1,0 +1,18 @@
+{
+  "name": "freebie-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A warm, static directory of genuinely useful free AI tools, courses, software, printables, and assistance programs.",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "serve": "node scripts/serve.js",
+    "test": "node --test",
+    "check": "node scripts/validate-data.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Asdale Dynamics, LLC"
+}

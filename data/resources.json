@@ -1,0 +1,904 @@
+{
+  "meta": {
+    "title": "Freebie Finder",
+    "version": 1,
+    "lastReviewed": "2026-10-22",
+    "coverageNote": "Listings are independently curated, with no paid placements or affiliate links. Free tiers and assistance programs change; confirm current terms with the provider."
+  },
+  "categories": [
+    {
+      "id": "ai-tools",
+      "label": "AI tools",
+      "blurb": "Chat assistants, open models, and hands-on labs."
+    },
+    {
+      "id": "courses",
+      "label": "Courses",
+      "blurb": "Free, self-paced ways to build practical skills."
+    },
+    {
+      "id": "software",
+      "label": "Software & tools",
+      "blurb": "Everyday apps for creating, selling, and keeping the books."
+    },
+    {
+      "id": "printables",
+      "label": "Printables & templates",
+      "blurb": "Free planners, labels, worksheets, and paper goods you can make your own."
+    },
+    {
+      "id": "assistance",
+      "label": "Programs & assistance",
+      "blurb": "Real-world support for people and small businesses."
+    }
+  ],
+  "resources": [
+    {
+      "id": "chatgpt-free",
+      "name": "ChatGPT Free",
+      "provider": "OpenAI",
+      "category": "ai-tools",
+      "description": "A forgiving first AI chat. Ask questions, draft a paragraph, tidy up a bio, or talk through a problem in plain English. A good place to learn what prompts do before paying for anything.",
+      "freeTierLimits": "Free chat with limited access to newer models, message caps, and limited file uploads and image creation. Caps can change when demand is high.",
+      "tags": [
+        "AI chat",
+        "Writing",
+        "Beginners"
+      ],
+      "url": "https://chatgpt.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Do not paste private health, client, or financial details into a chatbot. Free tiers can have different data-use terms than paid plans."
+    },
+    {
+      "id": "claude-free",
+      "name": "Claude Free",
+      "provider": "Anthropic",
+      "category": "ai-tools",
+      "description": "A calm workspace for longer writing, document review, and thoughtful back-and-forth. Particularly good at rewriting in your own voice and pulling key points out of a file.",
+      "freeTierLimits": "Free plan with daily message limits and basic file uploads. Limits reset over time and can vary with demand.",
+      "tags": [
+        "AI chat",
+        "Writing",
+        "Documents"
+      ],
+      "url": "https://claude.ai/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Usage limits can arrive without much warning on busy days. Review the privacy terms before uploading sensitive documents."
+    },
+    {
+      "id": "gemini-free",
+      "name": "Gemini",
+      "provider": "Google",
+      "category": "ai-tools",
+      "description": "Google's browser-based AI assistant, handy if you already work inside Google's ecosystem. Use it for research, brainstorming, image ideas, and working with uploaded files.",
+      "freeTierLimits": "Free chat access with daily limits, limited Deep Research, file uploads, and image creation. Some features may not be available in every region.",
+      "tags": [
+        "AI chat",
+        "Research",
+        "Beginners"
+      ],
+      "url": "https://gemini.google.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Model names and feature limits change often. Check which data can be used to improve products before sharing private material."
+    },
+    {
+      "id": "perplexity-free",
+      "name": "Perplexity Free",
+      "provider": "Perplexity",
+      "category": "ai-tools",
+      "description": "An answer engine that puts links front and center. Useful when you want a quick overview plus a set of sources you can read yourself instead of a confident-sounding answer.",
+      "freeTierLimits": "Free quick searches, with a limited number of advanced Pro searches per day. File upload and newer-model access may be capped.",
+      "tags": [
+        "Research",
+        "Writing",
+        "Beginners"
+      ],
+      "url": "https://www.perplexity.ai/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Always open the original sources. A tidy summary can still miss important nuance or be wrong."
+    },
+    {
+      "id": "google-ai-studio",
+      "name": "Google AI Studio",
+      "provider": "Google",
+      "category": "ai-tools",
+      "description": "A hands-on lab for experimenting with Gemini models, prompts, and images. A practical next step after chat apps if you are curious how AI tools are put together.",
+      "freeTierLimits": "Free browser playground and limited free API usage with rate limits. Quotas and model availability vary by account and region.",
+      "tags": [
+        "Coding",
+        "AI basics",
+        "Beginners"
+      ],
+      "url": "https://aistudio.google.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Free and paid API tiers can have different data-use terms. Read them before sending private material through an app you build."
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face",
+      "provider": "Hugging Face",
+      "category": "ai-tools",
+      "description": "The community workbench for open AI. Browse downloadable models, try public demos, explore datasets, and learn from projects other people have shared.",
+      "freeTierLimits": "Free account with public model and demo hosting plus community compute allowances. High-memory GPU use is limited or paid.",
+      "tags": [
+        "Open source",
+        "AI basics",
+        "Coding"
+      ],
+      "url": "https://huggingface.co/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Many models need serious local hardware. Public demos can sleep, queue, or disappear when a creator removes them."
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "provider": "Ollama",
+      "category": "ai-tools",
+      "description": "Run open language models on your own computer with a straightforward installer and simple commands. A local, no-cloud route for learning, tinkering, and private experiments.",
+      "freeTierLimits": "Free and open source. Your real costs are disk space, electricity, and the hardware needed to run a model comfortably.",
+      "tags": [
+        "Local AI",
+        "Privacy",
+        "Open source"
+      ],
+      "url": "https://ollama.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Small laptops may struggle with larger models. Speed and quality depend heavily on your hardware and chosen model size."
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "provider": "Open WebUI community",
+      "category": "ai-tools",
+      "description": "A polished, self-hosted chat interface for local or hosted AI models. A good fit for a home lab or a privacy-first workspace you control.",
+      "freeTierLimits": "Free and open source. You provide the server, setup, and model access; optional cloud integrations may need accounts of their own.",
+      "tags": [
+        "Local AI",
+        "Privacy",
+        "Open source"
+      ],
+      "url": "https://github.com/open-webui/open-webui",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Setup is friendlier than it once was, but still not plug-and-play. Secure it properly before exposing it outside your home network."
+    },
+    {
+      "id": "goblin-tools",
+      "name": "Goblin Tools",
+      "provider": "Goblin Tools",
+      "category": "ai-tools",
+      "description": "Small, focused helpers for people whose brains have too many tabs open. The magic to-do list breaks a vague task into startable steps, with tone and estimate tools alongside it.",
+      "freeTierLimits": "The core browser tools are free to use without an elaborate setup. Optional paid support exists for heavy use and helping cover running costs.",
+      "tags": [
+        "Productivity",
+        "Accessibility",
+        "Beginners"
+      ],
+      "url": "https://goblin.tools/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "AI-generated task steps are suggestions, not a judgement of your productivity. Adjust them to fit your actual day."
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "provider": "Microsoft",
+      "category": "ai-tools",
+      "description": "Microsoft's everyday AI assistant in the browser, Windows, and Microsoft 365 apps. Approachable for drafting, summarizing, and asking questions, especially if Microsoft tools are already familiar.",
+      "freeTierLimits": "A free Copilot account includes chat and some AI features in Microsoft apps, with usage limits and feature availability that vary by app and region. Advanced features and higher usage can require a paid plan.",
+      "tags": [
+        "AI chat",
+        "Writing",
+        "Beginners"
+      ],
+      "url": "https://copilot.microsoft.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Do not assume Copilot can see every file in your account by default. Check which files and chats you share and review your organization's data rules."
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "provider": "LM Studio",
+      "category": "ai-tools",
+      "description": "A desktop app for finding, downloading, and chatting with local language models. Friendly controls and a model browser make it a kinder on-ramp than assembling a local AI stack from scratch.",
+      "freeTierLimits": "Free to download for personal and professional use under its current terms. You supply the computer and storage; larger models need ample RAM or video memory.",
+      "tags": [
+        "Local AI",
+        "Privacy",
+        "Beginners"
+      ],
+      "url": "https://lmstudio.ai/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "The app is free, but not every model is suitable for commercial use. Check the model license and hardware requirements before relying on one for client work."
+    },
+    {
+      "id": "freecodecamp",
+      "name": "freeCodeCamp",
+      "provider": "freeCodeCamp",
+      "category": "courses",
+      "description": "A huge, genuinely free curriculum for coding and web development. Learn by building projects, earn certifications, and use the forum when a lesson refuses to make sense.",
+      "freeTierLimits": "All courses, projects, and certifications are free. Optional donations support the nonprofit; there is no paywalled certificate.",
+      "tags": [
+        "Coding",
+        "Web development",
+        "Beginners"
+      ],
+      "url": "https://www.freecodecamp.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "It is a lot of material. Pick one learning path rather than trying to collect every certificate at once."
+    },
+    {
+      "id": "elements-of-ai",
+      "name": "Elements of AI",
+      "provider": "University of Helsinki",
+      "category": "courses",
+      "description": "A gentle, no-math introduction to what AI is, where it shows up, and what it cannot do. Built for curious people rather than programmers, with practical exercises along the way.",
+      "freeTierLimits": "Course material is free to study online. No software purchase or programming setup is required to complete the core lessons.",
+      "tags": [
+        "AI basics",
+        "Beginners",
+        "Critical thinking"
+      ],
+      "url": "https://www.elementsofai.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Course availability and credit options can differ by country. You do not need a certificate to benefit from the lessons."
+    },
+    {
+      "id": "cs50x",
+      "name": "CS50x",
+      "provider": "Harvard University",
+      "category": "courses",
+      "description": "Harvard's famously welcoming introduction to computer science. A solid, free foundation in problem solving, code, and how computers actually work, taught with real energy.",
+      "freeTierLimits": "Lecture videos, notes, problem sets, and the CS50x coursework are free to access. An optional verified certificate has a fee.",
+      "tags": [
+        "Coding",
+        "Beginners",
+        "Critical thinking"
+      ],
+      "url": "https://cs50.harvard.edu/x/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "The problem sets are real work. Budget steady time rather than expecting a passive video course."
+    },
+    {
+      "id": "kaggle-learn",
+      "name": "Kaggle Learn",
+      "provider": "Kaggle",
+      "category": "courses",
+      "description": "Short, practical micro-courses in Python, data work, and AI fundamentals. Each lesson runs in a browser notebook, so you can try the idea instead of only reading about it.",
+      "freeTierLimits": "Learn courses are free. Browser notebooks come with a weekly compute allowance; heavier or accelerated compute may be limited.",
+      "tags": [
+        "Data",
+        "Coding",
+        "AI basics"
+      ],
+      "url": "https://www.kaggle.com/learn",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Free notebook sessions time out and have memory limits. Save your work before a long break."
+    },
+    {
+      "id": "microsoft-learn",
+      "name": "Microsoft Learn",
+      "provider": "Microsoft",
+      "category": "courses",
+      "description": "Self-paced learning paths for Microsoft tools, cloud basics, security, and AI. Friendly enough for beginners, with sandbox exercises that let you press the buttons for yourself.",
+      "freeTierLimits": "Learning paths and many hands-on sandbox exercises are free with a Microsoft account. Certification exams and some labs cost extra.",
+      "tags": [
+        "Cloud",
+        "Beginners",
+        "Coding"
+      ],
+      "url": "https://learn.microsoft.com/training/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "The catalog is enormous. Follow one path tied to a real project so the learning has somewhere to land."
+    },
+    {
+      "id": "hubspot-academy",
+      "name": "HubSpot Academy",
+      "provider": "HubSpot",
+      "category": "courses",
+      "description": "Free guided courses in marketing, sales, customer service, and CRM basics. Clear lessons and short videos, with certifications you can add to a professional profile.",
+      "freeTierLimits": "Courses and many certifications are free with a HubSpot account. Paid HubSpot software is not included, and certification rules can change.",
+      "tags": [
+        "Marketing",
+        "Small business",
+        "Beginners"
+      ],
+      "url": "https://academy.hubspot.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Some lessons naturally point toward HubSpot's products. You can learn the concepts without buying the software."
+    },
+    {
+      "id": "amazon-seller-university",
+      "name": "Amazon Seller University",
+      "provider": "Amazon",
+      "category": "courses",
+      "description": "Plain-language videos and guides about selling on Amazon, from choosing a product to handling fulfillment. Useful research before you spend money on inventory.",
+      "freeTierLimits": "The learning materials have no separate course fee. An Amazon account may be required, and normal seller fees still apply when you list products.",
+      "tags": [
+        "Small business",
+        "Marketing",
+        "Beginners"
+      ],
+      "url": "https://sell.amazon.com/learn",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Amazon's own guidance naturally promotes selling on Amazon. Compare fees and try a small test before committing to stock."
+    },
+    {
+      "id": "google-skillshop",
+      "name": "Google Skillshop",
+      "provider": "Google",
+      "category": "courses",
+      "description": "Official, self-paced training for Google Ads, Analytics, Search, and more. A practical way to learn the interfaces many small businesses actually use every week.",
+      "freeTierLimits": "The self-paced courses are free. Some certification exams, product usage, or advanced tools may have fees or eligibility rules.",
+      "tags": [
+        "Marketing",
+        "Data",
+        "Small business"
+      ],
+      "url": "https://skillshop.withgoogle.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Course material changes with Google's products. Check the date of a lesson before treating it as current."
+    },
+    {
+      "id": "mit-open-courseware",
+      "name": "MIT OpenCourseWare",
+      "provider": "Massachusetts Institute of Technology",
+      "category": "courses",
+      "description": "Lecture notes, problem sets, exams, and videos from thousands of MIT courses, published for anyone to learn from. A deep shelf for self-study, especially in computing, math, and science.",
+      "freeTierLimits": "Course materials are free to browse and use for personal learning under OCW's license terms. You do not earn MIT credit, and not every course has current or complete materials.",
+      "tags": [
+        "Coding",
+        "AI basics",
+        "Critical thinking"
+      ],
+      "url": "https://ocw.mit.edu/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Materials vary by course and publication year. Check the license on a specific page before reusing diagrams or text in your own work."
+    },
+    {
+      "id": "openlearn",
+      "name": "OpenLearn",
+      "provider": "The Open University",
+      "category": "courses",
+      "description": "The Open University's free course library, with short and long courses across business, digital skills, health, and more. Clear readings and activities you can fit around a real schedule.",
+      "freeTierLimits": "Free course access and written materials with an OpenLearn account. Free statements of participation may be available; formal credit or some upgraded certificates cost extra.",
+      "tags": [
+        "Beginners",
+        "Small business",
+        "Critical thinking"
+      ],
+      "url": "https://www.open.edu/openlearn/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "OpenLearn is not the same as enrolling at the Open University. Check what, if anything, a certificate is worth for your goal."
+    },
+    {
+      "id": "ibm-skillsbuild",
+      "name": "IBM SkillsBuild",
+      "provider": "IBM",
+      "category": "courses",
+      "description": "Free online courses and digital credentials in AI, cybersecurity, data, and workplace skills. Designed for students, career changers, and people without a big training budget.",
+      "freeTierLimits": "Many courses and digital credentials are free with an account. Course availability, language options, and credential programs vary by country and partner.",
+      "tags": [
+        "AI basics",
+        "Coding",
+        "Beginners"
+      ],
+      "url": "https://skillsbuild.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "A digital credential is not a guarantee of a job or an industry certification. Confirm that the course is available through your regional SkillsBuild site."
+    },
+    {
+      "id": "canva-free",
+      "name": "Canva Free",
+      "provider": "Canva",
+      "category": "software",
+      "description": "Browser-based design for book covers, social posts, flyers, and slide decks. The free templates and drag-and-drop editor make it possible to produce something tidy without design training.",
+      "freeTierLimits": "Free templates, editing tools, and limited cloud storage. Premium templates, brand kits, background removal, and some AI features are locked or capped.",
+      "tags": [
+        "Design",
+        "Marketing",
+        "Publishing"
+      ],
+      "url": "https://www.canva.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "A crown or Pro label means the element will cost money to use. Check licenses before selling merchandise that uses stock artwork."
+    },
+    {
+      "id": "wave",
+      "name": "Wave",
+      "provider": "Wave Financial",
+      "category": "software",
+      "description": "Free accounting, invoicing, and receipt organization built for small businesses in the US and Canada. A clean way to stop keeping invoices in a pile of screenshots.",
+      "freeTierLimits": "Core accounting, invoicing, and receipt tools are free. Online card and bank payments carry processing fees, and optional add-ons cost extra.",
+      "tags": [
+        "Bookkeeping",
+        "Small business",
+        "Beginners"
+      ],
+      "url": "https://www.waveapps.com/",
+      "region": "United States & Canada",
+      "lastVerified": "2026-10-21",
+      "caveat": "Free bookkeeping software is not a tax professional. Confirm the account type fits your business structure and keep backups."
+    },
+    {
+      "id": "notion-free",
+      "name": "Notion Free",
+      "provider": "Notion",
+      "category": "software",
+      "description": "A flexible notebook for plans, content calendars, client notes, and draft manuscripts. Start with one page and let the structure grow only when you actually need it.",
+      "freeTierLimits": "Free personal plan with unlimited pages for individuals, plus limits on guests, file uploads, and page history. Team features may be capped.",
+      "tags": [
+        "Productivity",
+        "Authors",
+        "Small business"
+      ],
+      "url": "https://www.notion.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "It is easy to spend more time arranging Notion than doing the work. Do not build a workspace before you have a workflow."
+    },
+    {
+      "id": "trello-free",
+      "name": "Trello Free",
+      "provider": "Atlassian",
+      "category": "software",
+      "description": "Simple visual boards for launches, book projects, and client work. Cards moving from To do to Done are wonderfully clear when your brain has too many open loops.",
+      "freeTierLimits": "Free workspaces are limited to a set number of boards, with unlimited cards and a monthly automation allowance. Advanced views require a paid plan.",
+      "tags": [
+        "Productivity",
+        "Planning",
+        "Small business"
+      ],
+      "url": "https://trello.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Board limits are per workspace, so decide whether you need several separate boards before organizing everything."
+    },
+    {
+      "id": "hubspot-crm-free",
+      "name": "HubSpot CRM Free",
+      "provider": "HubSpot",
+      "category": "software",
+      "description": "A free contact and deal pipeline for people who need to remember where each conversation stopped. Forms, simple email sends, and task tracking are included.",
+      "freeTierLimits": "Free CRM tools with contact and user limits, limited marketing emails and automation, and HubSpot branding on some customer-facing assets.",
+      "tags": [
+        "CRM",
+        "Marketing",
+        "Small business"
+      ],
+      "url": "https://www.hubspot.com/products/crm",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "The free product is generous, but the upgrade paths are everywhere. Decide what you need before connecting it to your whole business."
+    },
+    {
+      "id": "mailerlite-free",
+      "name": "MailerLite Free",
+      "provider": "MailerLite",
+      "category": "software",
+      "description": "Email newsletters and light automations for authors, makers, and small shops. A sane starting point when you have outgrown copying addresses into a spreadsheet.",
+      "freeTierLimits": "Free plan built around 1,000 subscribers and a monthly send allowance. More subscribers or advanced automation require a paid plan.",
+      "tags": [
+        "Email",
+        "Marketing",
+        "Authors"
+      ],
+      "url": "https://www.mailerlite.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Consent matters more than list size. Check anti-spam rules and never add people who did not agree to hear from you."
+    },
+    {
+      "id": "kindle-direct-publishing",
+      "name": "Kindle Direct Publishing",
+      "provider": "Amazon",
+      "category": "software",
+      "description": "Amazon's self-publishing path for eBooks and print-on-demand paperbacks. Upload a manuscript and cover, set your price, and reach Amazon's store without an agent.",
+      "freeTierLimits": "There is no upfront fee to publish. Amazon keeps a share of each sale, and optional printed proofs, expanded distribution, or advertising cost money.",
+      "tags": [
+        "Publishing",
+        "Authors",
+        "Small business"
+      ],
+      "url": "https://kdp.amazon.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Read the royalty and exclusivity options carefully. Formatting still takes real time even when the upload is free."
+    },
+    {
+      "id": "github-free",
+      "name": "GitHub Free",
+      "provider": "GitHub",
+      "category": "software",
+      "description": "A free home for code, documentation, open-source templates, and small static sites. Useful even when you are not a programmer because it keeps projects organized and shareable.",
+      "freeTierLimits": "Unlimited public and private repositories with a monthly allowance of private-repo Actions minutes. GitHub Pages is free for public sites; advanced features are paid.",
+      "tags": [
+        "Coding",
+        "Web hosting",
+        "Open source"
+      ],
+      "url": "https://github.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Free repositories are not a secret vault. Never commit API keys, passwords, or customer records, even to a private repo."
+    },
+    {
+      "id": "libreoffice",
+      "name": "LibreOffice",
+      "provider": "The Document Foundation",
+      "category": "software",
+      "description": "A full, free office suite for documents, spreadsheets, and presentations. It runs on your computer, works offline, and opens the common file formats clients tend to send.",
+      "freeTierLimits": "Free and open source with no subscription or account required. You supply the computer and storage; optional professional support is available separately.",
+      "tags": [
+        "Office",
+        "Privacy",
+        "Local first"
+      ],
+      "url": "https://www.libreoffice.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Complex Microsoft Office files can shift formatting. Check important documents after conversion and keep a PDF copy."
+    },
+    {
+      "id": "google-business-profile",
+      "name": "Google Business Profile",
+      "provider": "Google",
+      "category": "software",
+      "description": "Show the right name, hours, location, and contact details when people search for your business. A foundational free listing for local service providers and storefronts.",
+      "freeTierLimits": "Creating and managing a business profile is free. Optional advertising and some third-party integrations cost money.",
+      "tags": [
+        "Small business",
+        "Marketing",
+        "Beginners"
+      ],
+      "url": "https://www.google.com/business/",
+      "region": "Global",
+      "lastVerified": "2026-10-21",
+      "caveat": "Verification and eligibility rules vary by business type. Never pay a random caller to 'fix' your profile for you."
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "provider": "Joplin community",
+      "category": "software",
+      "description": "An open-source notes and to-do app with Markdown support, notebooks, and optional encryption. A local-first home for book notes, client details, and thoughts you do not want lost in a browser tab.",
+      "freeTierLimits": "The app is free and open source. Sync to cloud storage is included with Joplin Cloud or via third-party services; extra storage and some collaboration features are paid.",
+      "tags": [
+        "Productivity",
+        "Privacy",
+        "Local first"
+      ],
+      "url": "https://joplinapp.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Back up your notebook before major changes. If you sync with a third-party service, its storage limits and privacy terms still apply."
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "provider": "Bitwarden",
+      "category": "software",
+      "description": "A free password manager for your browser and phone with no paywall on the basics. It generates strong passwords, fills them in, and keeps them synced behind one master password.",
+      "freeTierLimits": "Free account with unlimited passwords and device sync, plus passkey support. Premium adds features such as built-in authenticator codes, file storage, and emergency access.",
+      "tags": [
+        "Security",
+        "Privacy",
+        "Beginners"
+      ],
+      "url": "https://bitwarden.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Your master password is the key. Use a long, unique passphrase, keep recovery options current, and avoid entering your vault on shared computers."
+    },
+    {
+      "id": "gimp",
+      "name": "GIMP",
+      "provider": "The GIMP Development Team",
+      "category": "software",
+      "description": "A free, open-source image editor for cropping, retouching, resizing, and creating graphics. Powerful enough for author photos and simple cover work once you learn your way around.",
+      "freeTierLimits": "Free and open source with no account or subscription. It runs on your computer; storage, hardware, and your time are the real costs.",
+      "tags": [
+        "Design",
+        "Publishing",
+        "Open source"
+      ],
+      "url": "https://www.gimp.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "GIMP's tools do not map exactly to Photoshop. Save an editable project file as well as a flat PDF or PNG before calling a design finished."
+    },
+    {
+      "id": "7-zip",
+      "name": "7-Zip",
+      "provider": "Igor Pavlov and contributors",
+      "category": "software",
+      "description": "A small, free utility for opening and creating compressed files such as ZIP and 7z. Helpful when a client sends an archive or you need to organize a bundle of manuscript files.",
+      "freeTierLimits": "Free and open source, with no ads or account. It is best known on Windows; other platforms may have different options or use third-party ports.",
+      "tags": [
+        "File tools",
+        "Privacy",
+        "Open source"
+      ],
+      "url": "https://www.7-zip.org/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Archive formats can preserve sensitive files. Encrypt anything private before sending it and verify the source of unexpected archives before opening them."
+    },
+    {
+      "id": "microsoft-create",
+      "name": "Microsoft Create",
+      "provider": "Microsoft",
+      "category": "printables",
+      "description": "Free templates for Word, Excel, PowerPoint, and printable projects. Browse planners, checklists, flyers, calendars, and book layouts, then customize them with Microsoft's web apps.",
+      "freeTierLimits": "Many templates are free to browse and customize with a Microsoft account. Some require a Microsoft 365 subscription, and the quality and license of individual templates vary.",
+      "tags": [
+        "Printables",
+        "Free templates",
+        "Productivity"
+      ],
+      "url": "https://create.microsoft.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Check whether a template includes stock images or fonts that are licensed for reuse. Save a working copy before editing the original."
+    },
+    {
+      "id": "avery-design-print",
+      "name": "Avery Design & Print",
+      "provider": "Avery",
+      "category": "printables",
+      "description": "Free label, card, and sticker templates paired with Avery's browser-based design tool. Practical for shipping labels, thank-you cards, pantry labels, and a hundred small-business jobs.",
+      "freeTierLimits": "Templates and the online design tool are free. You pay for physical Avery-branded supplies, and some specialty designs or services may require an account or purchase.",
+      "tags": [
+        "Printables",
+        "Labels",
+        "Small business"
+      ],
+      "url": "https://www.avery.com/templates",
+      "region": "United States",
+      "lastVerified": "2026-10-22",
+      "caveat": "Downloading a design is not the same as a print-perfect test. Print one sheet on plain paper, hold it against the label sheet, and check alignment before a full run."
+    },
+    {
+      "id": "vertex42",
+      "name": "Vertex42",
+      "provider": "Vertex42",
+      "category": "printables",
+      "description": "A long-running library of free spreadsheet templates for budgets, invoices, schedules, and business planning. Download an Excel or Sheets file and start with the formulas already built.",
+      "freeTierLimits": "A large selection of templates is free to download for personal use. Some are premium, many have advertising, and commercial reuse or redistribution may need permission.",
+      "tags": [
+        "Printables",
+        "Bookkeeping",
+        "Small business"
+      ],
+      "url": "https://www.vertex42.com/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Check the terms before using a template in a paid or client-facing product. Review formulas and tax categories with a qualified professional for your situation."
+    },
+    {
+      "id": "printable-paper",
+      "name": "Printable Paper",
+      "provider": "PrintablePaper.net",
+      "category": "printables",
+      "description": "A no-frills collection of downloadable paper: graph, lined, music, dot grid, and specialty sheets. Handy when you need something printable right now and do not want an account.",
+      "freeTierLimits": "Free PDF downloads with no sign-up required. The site is supported by ads, and the selection is limited to paper patterns rather than full planner designs.",
+      "tags": [
+        "Printables",
+        "Free templates",
+        "Productivity"
+      ],
+      "url": "https://www.printablepaper.net/",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Print a test page at 100% scale; browser 'fit to page' settings can shrink the grid and throw off measurements. Check paper and ink costs before printing a stack."
+    },
+    {
+      "id": "time-and-date-calendars",
+      "name": "Time and Date Printable Calendars",
+      "provider": "Time and Date AS",
+      "category": "printables",
+      "description": "Clean, printable monthly and yearly calendars in several layouts and languages. Choose a month or year, download a PDF, and have a paper overview without a subscription.",
+      "freeTierLimits": "Calendar PDFs are free to create and print. The site is ad-supported, and some calendar tools or customizable features may be limited.",
+      "tags": [
+        "Printables",
+        "Planning",
+        "Free templates"
+      ],
+      "url": "https://www.timeanddate.com/calendar/printable.html",
+      "region": "Global",
+      "lastVerified": "2026-10-22",
+      "caveat": "Download the current year's file after any changes; dates and holiday options vary by country. Review the site's terms before selling or redistributing the files."
+    },
+    {
+      "id": "211",
+      "name": "211",
+      "provider": "United Way and local 211 services",
+      "category": "assistance",
+      "description": "One number for local help with food, housing, utilities, crisis counseling, and more. A real person can point you toward nearby services without a sales pitch.",
+      "freeTierLimits": "Free phone, text, and web referrals. Service breadth and wait times vary by community; not every county has the same coverage.",
+      "tags": [
+        "Benefits",
+        "Housing",
+        "United States"
+      ],
+      "url": "https://www.211.org/",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "211 is not an emergency service. Call 911 if someone is in immediate danger."
+    },
+    {
+      "id": "indiana-211",
+      "name": "Indiana 211",
+      "provider": "Indiana 211",
+      "category": "assistance",
+      "description": "Indiana's local version of 211, connecting Hoosiers with food, housing, utility, and family support. Search online or call to talk through what is available nearby.",
+      "freeTierLimits": "Free, confidential referrals by phone, text, or web. The individual programs may have income, residency, or documentation requirements.",
+      "tags": [
+        "Indiana",
+        "Benefits",
+        "Housing"
+      ],
+      "url": "https://www.in211.org/",
+      "region": "Indiana, USA",
+      "lastVerified": "2026-10-21",
+      "caveat": "Eligibility is set by each program, not by 211. Confirm hours and documents with the organization before going in."
+    },
+    {
+      "id": "findhelp",
+      "name": "FindHelp",
+      "provider": "FindHelp",
+      "category": "assistance",
+      "description": "A searchable map of food pantries, housing support, financial aid, and other local programs. Search by ZIP code and contact organizations directly from the listings.",
+      "freeTierLimits": "Free to search and contact listed programs. Availability, eligibility, and waitlists are set by each local organization.",
+      "tags": [
+        "Food",
+        "Housing",
+        "Benefits"
+      ],
+      "url": "https://www.findhelp.org/",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "Listings can be out of date. Call ahead to confirm hours, documents, and eligibility before making the trip."
+    },
+    {
+      "id": "usa-benefit-finder",
+      "name": "USA.gov Benefit Finder",
+      "provider": "USA.gov",
+      "category": "assistance",
+      "description": "A confidential questionnaire that points to federal and state benefits you may qualify for, from food assistance to health coverage. Clearer than guessing from a dozen agency websites.",
+      "freeTierLimits": "Free to use without an account. It screens for possible matches; it does not submit applications or approve benefits.",
+      "tags": [
+        "Benefits",
+        "United States",
+        "Housing"
+      ],
+      "url": "https://www.usa.gov/benefit-finder",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "A match is not an approval. Confirm eligibility and deadlines with the government agency before relying on a benefit."
+    },
+    {
+      "id": "score",
+      "name": "SCORE",
+      "provider": "SCORE",
+      "category": "assistance",
+      "description": "Free one-on-one mentoring and workshops from experienced volunteers for US small businesses. Helpful when you need a second pair of eyes on pricing, a plan, or a scary first hire.",
+      "freeTierLimits": "Mentoring and many workshops are free. Some events, specialized services, or chapters may charge a fee.",
+      "tags": [
+        "Mentoring",
+        "Small business",
+        "United States"
+      ],
+      "url": "https://www.score.org/",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "Mentors are volunteers, not a substitute for a lawyer or accountant. Verify specific legal and tax advice independently."
+    },
+    {
+      "id": "indiana-sbdc",
+      "name": "Indiana Small Business Development Center",
+      "provider": "Indiana SBDC",
+      "category": "assistance",
+      "description": "No-cost, confidential business advising across Indiana. Connect with regional advisors for questions about starting, growing, or untangling a small business.",
+      "freeTierLimits": "Core one-on-one advising is free for Indiana entrepreneurs. Registration and some specialized training or events may cost money.",
+      "tags": [
+        "Indiana",
+        "Mentoring",
+        "Small business"
+      ],
+      "url": "https://isbdc.org/",
+      "region": "Indiana, USA",
+      "lastVerified": "2026-10-21",
+      "caveat": "Services and appointment availability vary by regional center. Ask what free support is included before agreeing to any paid program."
+    },
+    {
+      "id": "irs-free-file",
+      "name": "IRS Free File",
+      "provider": "Internal Revenue Service",
+      "category": "assistance",
+      "description": "Guided federal tax preparation through IRS partner software for people who meet the income requirement. Fillable forms offer a more DIY option for many other filers.",
+      "freeTierLimits": "Free guided filing for taxpayers within the program's annual income limit. Fillable forms are available more broadly, but paid state filing or upgrades may be offered.",
+      "tags": [
+        "Taxes",
+        "United States",
+        "Bookkeeping"
+      ],
+      "url": "https://www.irs.gov/freefile",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "Income limits are updated each tax year. Check the official IRS page for the current threshold and state-return rules."
+    },
+    {
+      "id": "feeding-america",
+      "name": "Feeding America Food Bank Finder",
+      "provider": "Feeding America",
+      "category": "assistance",
+      "description": "Find a local food bank or pantry by ZIP code. A no-drama way to locate nearby food support, whether situations are temporary or have been tight for a while.",
+      "freeTierLimits": "The online food-bank locator is free. Pantry hours, eligibility, and available food vary by location; some require an appointment.",
+      "tags": [
+        "Food",
+        "United States",
+        "Basic needs"
+      ],
+      "url": "https://www.feedingamerica.org/find-your-local-foodbank",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "A listing does not guarantee open hours or same-day service. Call ahead when possible."
+    },
+    {
+      "id": "benefitscheckup",
+      "name": "BenefitsCheckUp",
+      "provider": "National Council on Aging",
+      "category": "assistance",
+      "description": "A free screening tool for older adults and their families to find benefits for prescriptions, utilities, food, and other everyday costs. Results are organized by ZIP code.",
+      "freeTierLimits": "The screening tool is free and does not enroll you in benefits. Program eligibility and application rules are set by each agency.",
+      "tags": [
+        "Older adults",
+        "Benefits",
+        "United States"
+      ],
+      "url": "https://benefitscheckup.org/",
+      "region": "United States",
+      "lastVerified": "2026-10-21",
+      "caveat": "This is a screening tool, not a guarantee. Ask the listed agency about required documents and deadlines."
+    },
+    {
+      "id": "liheap",
+      "name": "LIHEAP Home Energy Assistance",
+      "provider": "U.S. Administration for Children and Families",
+      "category": "assistance",
+      "description": "A federal home-energy assistance program that helps eligible households with heating, cooling, and energy-related costs. Applications are handled through state and local agencies.",
+      "freeTierLimits": "Help is available for eligible households, but it is not automatic and is not the same as free energy. Income limits, crisis rules, and application windows vary by state and funding.",
+      "tags": [
+        "Energy",
+        "Benefits",
+        "United States"
+      ],
+      "url": "https://www.acf.hhs.gov/ocs/low-income-home-energy-assistance-program-liheap",
+      "region": "United States",
+      "lastVerified": "2026-10-22",
+      "caveat": "This is a government benefit program, not financial or legal advice. Find your state's application process through the official LIHEAP page and confirm which documents are needed."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Freebie Finder">
+  <title>Freebie Finder</title>
+  <rect width="64" height="64" rx="16" fill="#f2c75c" />
+  <g fill="none" stroke="#173d30" stroke-linecap="round" stroke-width="5">
+    <path d="M32 12v13.2M32 38.8V52M12 32h13.2M38.8 32H52" />
+    <circle cx="32" cy="32" r="7" fill="#db5c3b" stroke="none" />
+  </g>
+</svg>
